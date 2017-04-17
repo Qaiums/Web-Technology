@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<style>
+#all{
+width:97%;
+padding:.4%;
+margin-right: auto;
+margin-left: auto;
+border: thin solid black;
+}
+
+#rspan{
+width:20%;
+padding:.10%;
+
+border: thin solid black;
+}
+
+p {
+  position: absolute;
+  top: auto;
+}
+
+</style>
+
+
+<html>
+<head>
+	<title>Emailing System Compose</title>
+</head>
+<body>
+<center><h3>School Management System</h3></center>
+	<table border="1" width="7%" align="right">
+		<tr>
+			<td border-radius:"25px" style="text-align: center;"><a href="#"/>Sign Up</td>
+		</tr>
+	</table>
+
+
+	<table border="1" width="100%">
+		<tr>
+			<td width="20%" style="text-align: center;"><a href="#"/>Student DB</td>
+			<td width="20%" style="text-align: center;"><a href="#"/>Teacher DB</td>
+			<td width="20%" style="text-align: center;"><a href="#"/>Emailing System</td>
+			<td width="20%" style="text-align: center;"><a href="#"/>Reports</td>
+			<td width="20%" style="text-align: center;"><a href="#"/>Logout</td>
+		</tr>
+	</table>
+
+<div id="divActivites" name="divActivites" style="border: thin solid black;height: 500px;">
+<p style=" text-align:center; width: 100%;">Emailing System</p><br/><br/>
+
+<span style="margin-left: 3%"><a href="#">Inbox</a></span><span style="margin-left: 10%">Compose Message</span> </br></br>
+
+<div id="divActivites" name="divActivites" style="border: thin solid black;width: 95%;height: 400px; ; margin-right: auto;margin-left: auto;"><br/><br/>
+<form method="post" action="">
+<table cellspacing="20" width="100%">
+		<tr>
+			<td width="20%" style="text-align: center;">Message</td>
+			<td width="80%" style="text-align: center;"><input type="text" name="composemsg" style=" border: thin solid black; width: 90%; height:35px"></td>
+		</tr>
+</table>
+
+<input type="submit" value="Send the message" name="sendmsgfromadmin" style="margin-left: 10% ; width: 15%">
+</form>
+<br/><br/>
+<center>
+<div>Post a notice</div><br/>
+<form>
+<input type="text" name="notice" style=" border: thin solid black; width: 90%; height:60px"><br/><br/>
+<input type="submit" name="buttonnotice" value="Post" style=" width: 15%">
+</form>
+</center>
+
+
+<br/></div><br/><br/>
+</div> 
+
+</body>
+</html>

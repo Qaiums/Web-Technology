@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<style>
+#all{
+width:60%;
+padding:.4%;
+margin-right: auto;
+margin-left: auto;
+border: thin solid black;
+
+}
+#right{
+float: right;
+}
+</style>
+
+
+<html>
+<head>
+	<title>Transaction</title>
+</head>
+<body>
+<center><h3>School Management System</h3></center>
+<a href="#" id="right" style="text-decoration:none">Logout </a>  
+	
+
+
+	<table border="1" width="100%">
+		<tr>
+			<td width="20%" style="text-align: center;"><a href="#"/>Student DB</td>
+			<td width="20%" style="text-align: center;"><a href="#"/>Teacher DB</td>
+			<td width="20%" style="text-align: center;"><a href="#"/>Emailing System</td>
+			<td width="20%" style="text-align: center;"><a href="#"/>Report</td>
+			<td width="20%" style="text-align: center;"><a href="#"/>Transaction</td>
+		</tr>
+	</table>
+	
+
+<div id="divActivites" name="divActivites" style="border: thin solid black">
+<center><p>Transaction</p>
+
+<form> 
+StudentID: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="name"  style=" border: thin solid black; width: 60%;"><br/><br/>
+
+Type :   &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+<select name="class" style=" border: thin solid black; width: 60%; text-align: center;">
+  <option value="">Tution Fee</option>
+  <option value="">Admission Fee</option>
+  <option value="">Yearly Fee</option>
+  <option value="">Others</option>
+
+</select> </br> </br> </br>
+
+<input type="submit" name="Submit" onclick="myFunction()" value="Confirm" style="width: 15%"><br/><br/>
+
+
+
+</form>
+ </center>
+
+</br> </br> </br> </br> </br> </br></br> </br> </br></br> </br>
+</div>
+</body>
+</html>
+
+<script>
+function myFunction() {
+    confirm("Are You sure ??? ");
+}
+</script>

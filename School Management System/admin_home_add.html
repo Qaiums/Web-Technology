@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<style>
+#all{
+width:60%;
+padding:.4%;
+margin-right: auto;
+margin-left: auto;
+border: thin solid black;
+
+}
+</style>
+
+
+<html>
+<head>
+	<title>Admin home add</title>
+</head>
+<body>
+<center><h3>School Management System</h3></center>
+	
+
+
+	<table border="1" width="100%">
+		<tr>
+			<td width="20%" style="text-align: center;"><a href="#"/>Student DB</td>
+			<td width="20%" style="text-align: center;"><a href="#"/>Teacher DB</td>
+			<td width="20%" style="text-align: center;"><a href="#"/>Inbox</td>
+			<td width="20%" style="text-align: center;"><a href="#"/></td>
+			<td width="20%" style="text-align: center;"><a href="#"/>Logout</td>
+		</tr>
+	</table>
+	
+
+<div id="divActivites" name="divActivites" style="border: thin solid black">
+<center><p>ADMIN HOME</p>
+<P> ADD</P>
+<form> 
+Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="name"  style=" border: thin solid black; width: 60%; text-align: center;"><br/><br/>
+Father's Name: &nbsp; &nbsp; &nbsp; <input type="text" name="fname"  style=" border: thin solid black; width: 60%; text-align: center;"><br/><br/>
+Mother's Name: &nbsp; &nbsp; &nbsp; <input type="text" name="mname"  style=" border: thin solid black; width: 60%; text-align: center;"><br/><br/>
+Address:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="address"  style=" border: thin solid black; width: 60%; text-align: center;"><br/><br/>
+Type :  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<select name="type" id="type" style=" border: thin solid black; width: 60%; text-align: center;"  onchange="slcttype()">
+  <option value="teacher">Teacher</option>
+  <option value="student">Student</option>
+</select> </br> </br>
+
+<div id="classSpan"> </div>
+
+
+
+<input type="submit" name="Submit" value="Submit" style="width: 15%"><br/><br/>
+
+
+</form>
+ </center>
+
+</br> </br> </br> </br> </br> </br></br> </br> </br></br> </br>
+</div>
+</body>
+</html>
+
+
+
+<script>
+
+function slcttype()
+{
+	
+	var type=document.getElementById("type").value;
+	
+	if(type=="student")
+	{
+		var v= "Class :&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <select name='class' style=' border: thin solid black; width: 60%; text-align: center;'>  <option value=''>Class</option>  <option value=''>NUR</option>  <option value=''>KG</option>  <option value=''>1</option>  <option value=''>2</option></select> </br> </br> </br>";
+		 document.getElementById("classSpan").innerHTML =v;
+	}
+	else
+	{
+		document.getElementById("classSpan").innerHTML=" ";
+	}
+
+}
+
+</script>
